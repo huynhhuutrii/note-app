@@ -1,0 +1,27 @@
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  tbody tr:hover {
+    background-color: #F2F2F2;
+  }
+  tr {
+    th {
+      text-align: center;
+      padding: 8px;
+      border: 1px solid #eee;
+    }
+    td {
+      border: 1px solid #eee;
+      padding: 10px;
+    }
+    th:first-child,
+    td:first-child {
+      width: 70px;
+    }
+  }
+}
+
+svg  {
+  height: 20px;
+}
