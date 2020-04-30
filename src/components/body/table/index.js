@@ -4,6 +4,7 @@ import { ReactComponent as PenIcon } from "../../../assets/img/pen.svg";
 import { ReactComponent as DeleteIcon } from "../../../assets/img/delete.svg";
 export default class Table extends Component {
   render() {
+    const { notes } = this.props; //destructuring
     return (
       <div>
         <table>
@@ -14,17 +15,23 @@ export default class Table extends Component {
             <th>Update Date</th>
           </tr>
           <tbody>
-            <tr>
-              <td>
-                <div style={{ display: "flex", width: "70px" }}>
-                  <PenIcon style={{fill:'blue'}} />
-                  <DeleteIcon style={{fill:'red'}} />
-                </div>
-              </td>
-              <td>show commit item</td>
-              <td>Thu 6 ngay 13</td>
-              <td>Thu 6 ngay 13</td>
-            </tr>
+            {
+              notes.map((note) => {
+                return (
+                  <tr>
+                    <td>
+                      <div style={{ display: "flex", width: "70px" }}>
+                        <PenIcon style={{ fill: "blue" }} />
+                        <DeleteIcon style={{ fill: "red" }} />
+                      </div>
+                    </td>
+                    <td>{note.title}</td>
+                    <td>{note.content}</td>
+                    <td>{note.tag}</td>
+                  </tr>
+                );
+              })
+            }
           </tbody>
         </table>
       </div>
