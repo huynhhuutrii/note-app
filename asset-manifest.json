@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/note-app/static/css/main.2e5758f3.chunk.css",
+    "main.js": "/note-app/static/js/main.083e1849.chunk.js",
+    "main.js.map": "/note-app/static/js/main.083e1849.chunk.js.map",
+    "runtime-main.js": "/note-app/static/js/runtime-main.8d446e83.js",
+    "runtime-main.js.map": "/note-app/static/js/runtime-main.8d446e83.js.map",
+    "static/js/2.e1df951f.chunk.js": "/note-app/static/js/2.e1df951f.chunk.js",
+    "static/js/2.e1df951f.chunk.js.map": "/note-app/static/js/2.e1df951f.chunk.js.map",
+    "index.html": "/note-app/index.html",
+    "precache-manifest.cd9ed58ddd555954d4596fbbd7bdebe8.js": "/note-app/precache-manifest.cd9ed58ddd555954d4596fbbd7bdebe8.js",
+    "service-worker.js": "/note-app/service-worker.js",
+    "static/css/main.2e5758f3.chunk.css.map": "/note-app/static/css/main.2e5758f3.chunk.css.map",
+    "static/js/2.e1df951f.chunk.js.LICENSE.txt": "/note-app/static/js/2.e1df951f.chunk.js.LICENSE.txt",
+    "static/media/add.d0f5911d.svg": "/note-app/static/media/add.d0f5911d.svg",
+    "static/media/delete.650cdc57.svg": "/note-app/static/media/delete.650cdc57.svg",
+    "static/media/noteIcon.cbe4df50.svg": "/note-app/static/media/noteIcon.cbe4df50.svg",
+    "static/media/pen.27b127d3.svg": "/note-app/static/media/pen.27b127d3.svg",
+    "static/media/signing.89a8ab44.svg": "/note-app/static/media/signing.89a8ab44.svg",
+    "static/media/tools-and-utensils.c4127766.svg": "/note-app/static/media/tools-and-utensils.c4127766.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d446e83.js",
+    "static/js/2.e1df951f.chunk.js",
+    "static/css/main.2e5758f3.chunk.css",
+    "static/js/main.083e1849.chunk.js"
+  ]
+}
