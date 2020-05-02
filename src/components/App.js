@@ -3,6 +3,7 @@ import styles from "./app.module.scss";
 import Header from "./header";
 import Body from "./body";
 import NewNote from "./newnote";
+import axios from "axios";
 
 class Index extends React.Component {
   state = {
@@ -30,11 +31,18 @@ class Index extends React.Component {
   onPress = () => {
     if (this.state.temp === false) {
       this.setState({ temp: true });
-    }
-    else this.setState({ temp: false });
+    } else this.setState({ temp: false });
   };
   onChangeSearchContent = (content) => {
     this.setState({ searchContent: content });
+  };
+  addNewNote = (note) => {
+    this.setState({ notes: [...this.state.notes, note] });
+    const url = "https://note-simple-app.herokuapp.com/note";
+    axios
+      .post(url, note)
+      .then((value) => console.log(value))
+      .catch((err) => console.log(err));
   };
 
   render() {
@@ -49,7 +57,9 @@ class Index extends React.Component {
             return el.title.includes(this.state.searchContent);
           })}
         />
-        {this.state.temp === false ? null : <NewNote onPress={this.onPress}/>}
+        {this.state.temp === false ? null : (
+          <NewNote onPress={this.onPress} addNewNote={this.addNewNote} />
+        )}
       </div>
     );
   }
